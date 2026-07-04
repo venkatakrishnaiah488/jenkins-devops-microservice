@@ -28,6 +28,4 @@ pipeline{
 			echo " i run when i am failure"
 		}
 	}
-
-
 }
