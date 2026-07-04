@@ -1,21 +1,22 @@
-pipeline {
-    agent any 
-	  stages {
-		stage('Build') {
-			steps {
-			echo "Build"	
-			}
-		}
-		stage('Test') {
-			steps {
-            echo "test"      
-			}
-		}
-		stage('Integrationtest') {
-			steps {
-            echo "integrationtest"
-			}
-		}
-	  }
-	
+pipeline{
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                echo "build"
+            }
+        }
+        stage('test1') {
+            steps {
+                echo "test1"
+            }
+        }
+        stage('integration_test') {
+            steps {
+                echo "integration test"
+            }
+        }
+    }
+
+
 }
